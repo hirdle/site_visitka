@@ -1,5 +1,3 @@
-/*     Основные стили      */
-
 *,
 *:before,
 *:after{
@@ -21,8 +19,6 @@ body{
     font-family: 'Pangolin', cursive;
     margin: 0;
 }
-
-/*     Меню     */
 
 .header {
     position: fixed;
@@ -112,7 +108,7 @@ body{
 
 
 
-/*.button_product{
+.button_product{
     color: #000;
     font-size: 18px;
     line-height: 134.77%;
@@ -130,78 +126,12 @@ body{
 .button_product_block{
     padding-left: 25px;
     padding-right: 20px;
-}*/
-
-
-/*          Главный блок           */
-
-.intro_titles{
-    font-style: normal;
-    font-weight: normal;
-    padding-left: 30px;
-    padding-top: 10%;
-    color: #FCF43E;
-}
-
-.intro_title{
-    font-size: 56px;
-    line-height: 70px;
-}
-
-.intro_subtitle{
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 140.62%;
-}
-
-.intro{
-    display: flex;
-    align-items: center;
-    height: 100vh;
-    background: url(../img/Background_1.png) center no-repeat;
-    background-size: cover;
-}
-
-.intro_block{ 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    vertical-align: middle;
-}
-
-.intro_img img{
-    max-width: 400px;
-    max-height: 500px;
-    width: 100%;
-    height: 100%;
-    margin-top: 100px;
-    object-fit: cover;
-}
-
-.button_intro{
-    font-size: 27px;
-    line-height: 34px;
-    color: #FCF43E;
-    text-align: center;
-    text-decoration: none;
-    
-    padding: 6px 20px;
-    
-    border-style: solid;
-    border-color: #FCF43E;
-    border-radius: 10px;
-    border-width: 2px;
-}
-
-.button_intro_block{
-    margin-top: 30px;
 }
 
 
-/*         Товары         */
 
 .products{
+    margin-top: 80px;
     background: url(../img/Background_2.png) center;
     background-repeat: repeat-x;
     background-size: cover;
@@ -296,140 +226,8 @@ body{
     color: #000;
 }
 
-.button_price_block{
-    padding-top: 30px;
-    padding-bottom: 50px;
-    text-align: center;
-}
-
-/*       Линии         */
-
-.line_between_block{
-    position: absolute;
-    opacity: .7;
-    z-index: 20;
-    width: 100%;
-    height: 10px;
-    background-color: #FCF43E;
-}
-
-/*        Форма       */
-
-.box{
-  padding: 40px;
-  background: black;
-  text-align: center;
-}
-.box h1{
-  color: #fff;
-}
-.box input[type = "name"]{
-  border:0;
-  background: none;
-  display: block;
-  margin: 20px auto;
-  text-align: center;
-  border: 2px solid #ffce00;
-  padding: 14px 10px;
-  width: 160px;
-  outline: none;
-  color: white;
-  border-radius: 24px;
-  transition: 0.25s;
-}
-.box input[type = "product"]{
-  border:0;
-  background: none;
-  display: block;
-  margin: 20px auto;
-  text-align: center;
-  border: 2px solid #ffce00;
-  padding: 14px 10px;
-  width: 180px;
-  outline: none;
-  color: white;
-  border-radius: 24px;
-  transition: 0.25s;
-}
-.box input[type = "e-mail"]{
-  border:0;
-  background: none;
-  display: block;
-  margin: 20px auto;
-  text-align: center;
-  border: 2px solid #ffce00;
-  padding: 14px 10px;
-  width: 200px;
-  outline: none;
-  color: white;
-  border-radius: 24px;
-  transition: 0.25s;
-}
-.box input[type = "name"]:focus{
-  width: 180px;
-  border-color: #ff4e00;
-}
-.box input[type = "product"]:focus{
-  width: 200px;
-  border-color: #ff4e00;
-}
-.box input[type = "e-mail"]:focus{
-  width: 220px;
-  border-color: #ff4e00;
-}
-.box input[type = "submit"]{
-  border:0;
-  background: none;
-  display: block;
-  margin: 20px auto;
-  text-align: center;
-  border: 2px solid #ffce00;
-  padding: 14px 40px;
-  outline: none;
-  color: white;
-  border-radius: 24px;
-  transition: 0.25s;
-  cursor: pointer;
-}
-.box input[type = "submit"]:hover{
-  background: #ffce00;
-}
-
-
-
-
-
-/*        Для планшета         */
-
-@media (max-width: 800px){
-    .intro_titles{
-        margin: 0 auto;
-        margin-left: 3%;
-    }
-    .intro_img {
-        height: 50%;
-        width: 50%;
-        margin-top: 7%;
-    }
-    .intro_img img{
-        margin-top: 0px;
-    }
-    
-    .intro_block {
-    }
-    .intro_titles {
-	    padding-left: 0;
-        padding-top: 1%;
-    }
-}
-
-/*          Телефоны        */
 
 @media (max-width: 767px){
-    .intro_titles{
-        margin: 0 auto;
-        text-align: center;
-    }
     .nav{
         display: block;
     }
@@ -531,11 +329,7 @@ body{
         position: relative;
         z-index: 3;
     }
-    .intro{
-    }
-    .intro_img{
-        display: none;
-    }
+    
     .products_items{
         display: block;
     }
@@ -545,26 +339,8 @@ body{
         margin: 0 auto;
         margin-top: 20px;
     }
-    
-}
-
-@media (max-width: 400px){
-    .intro_title{
-        font-size: 38px;
-        line-height: 110%;
-        padding-bottom: 20px;
-    }
-    .intro_subtitle{
-        font-size: 22px;
-        padding: 0px 10px;
-    }
-    .intro_block {
-	    display: flex;
-        align-items: center;
+    .products{
+        margin-top: 60px;
     }
 }
-
-
-
-
 
