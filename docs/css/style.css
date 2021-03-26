@@ -1,570 +1,372 @@
-/*     Основные стили      */
-
 *,
 *:before,
 *:after{
     box-sizing: border-box;
 }
 
-h1,h2,h3,h4,h5,h6, p, img, a, section, header{
+h1,h2,h3,h4,h5,h6, p, img, a{
     margin: 0;
     padding: 0;
 }
 
 .container{
     width: 100%;
-    max-width: 1000px;
+    max-width: 955px;
     margin: 0 auto;
 }
 
 body{
-    font-family: 'Pangolin', cursive;
+    font-family: 'Khula', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
     margin: 0;
+    background-color: #fff;
 }
 
-/*     Меню     */
-
-.header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 50;
+.text-p{
+    color: #000;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    font-weight: 600;
 }
 
-.header:before{
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: #FFDF35;
-    z-index: 2;
+
+/*------Header--------*/
+
+.header{
+    
 }
 
-.header_inner{
-    padding: 0 10px;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    height: 80px;
-    align-items: center;
+.header-inner{
+    border-bottom: 1px solid #828282;
+    padding-top: 35px;
+    padding-bottom: 40px;
 }
 
-.nav_li {
-    display: flex;
-    padding-left: 0px;
-}
+/*------Nav--------*/
 
 .nav{
-    z-index: 3;
-}
-
-.nav_link{
-    font-size: 18px;
-    text-decoration: none;
-    color: #000;
-    padding-left: 40px;
-    list-style: none;
-}
-
-.nav_link:first{
-    padding-left:0px;
-}
-
-.nav_li li{   
-    list-style: none;
-}
-
-
-.header_img{
-    max-width: 100%;
-    flex: 0 0 60px;
-    border-radius: 50%;
-    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
     
-    border-style: solid;
-    border-color: #000;
-    border-radius: 50%;
-    border-width: 2px;
-    position: relative;
-    z-index: 3;
 }
 
-.header_img img{
-    max-width: 100%;
-    display: block;
-}
-
-.header_title{
-    font-weight: normal;
-    font-size: 24px;
-    color: #000;
+.nav-link{
+    padding: 0 10px;
     text-decoration: none;
-    position: relative;
-    z-index: 3;
+    font-weight: 700;
+    color: #828282;
+    transition: color .4s linear;
 }
 
-.header_burger{
-    display: none;
-}
-
-
-
-/*.button_product{
+.nav-link:hover{
     color: #000;
-    font-size: 18px;
-    line-height: 134.77%;
-    text-align: center;
-    text-decoration: none;
-    padding: 3px 10px;
-    border-style: solid;
-    border-color: #000;
-    border-radius: 10px;
-    border-width: 2px;
-    position: relative;
-    z-index: 3;
-}
-
-.button_product_block{
-    padding-left: 25px;
-    padding-right: 20px;
-}*/
-
-
-/*          Главный блок           */
-
-.intro_titles{
-    font-style: normal;
-    font-weight: normal;
-    padding-left: 30px;
-    padding-top: 10%;
-    color: #FCF43E;
-}
-
-.intro_title{
-    font-size: 56px;
-    line-height: 70px;
-}
-
-.intro_subtitle{
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 140.62%;
 }
 
 .intro{
+    padding-top: 45px;
+}
+
+/*------Intro--------*/
+
+.intro-titles{
     display: flex;
-    align-items: center;
-    height: 100vh;
-    background: url(../img/Background_1.png) center no-repeat;
-    background-size: cover;
+    align-items: flex-end;
+    padding-bottom: 20px;
 }
 
-.intro_block{ 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    vertical-align: middle;
+.intro-title{
+    color: #070707;
+    
+    font-size: 47.3392px;
+    line-height: 59px;
+    font-weight: 700;
 }
 
-.intro_img img{
-    max-width: 400px;
-    max-height: 500px;
-    width: 100%;
-    height: 100%;
-    margin-top: 100px;
-    object-fit: cover;
+.intro-subtitle{
+    margin-bottom: 10px;
+    font-weight: 400;
+    padding-left: 307px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #070707;
+    
 }
 
-.button_intro{
-    font-size: 27px;
-    line-height: 34px;
-    color: #FCF43E;
+.intro-img{
+    margin-bottom: 110px;
+    background: url(../img/photo1.png);
+    width: 950px;
+    height: 387px;
+}
+
+.section-title{
+    padding-top: 120px; 
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 42px;
     text-align: center;
+}
+
+/*------About Me--------*/
+
+.aboutme{
+    background-color: #F6F6F6;
+}
+
+.aboutme-text{
+    color: #000;
+    padding-top: 35px;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.aboutme-text1{
+    color: #000;
+    padding-top: 55px;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.aboutme-text2{
+    color: #000;
+    padding-top: 55px;
+    padding-bottom: 100px;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    font-weight: 600;
+}
+
+/*------Skills--------*/
+
+.skills{
+    background-color: #fff;
+}
+
+
+
+.skills-programs{
+    max-width: 950px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.Program{
+    margin: auto;
+    display: block;
+    align-items: center;
+}
+.prog-img{
+        max-height: 100%;
+		max-width: 100%;
+    }
+
+.skills-name{
+    margin: auto;
+    line-height: 17px;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    color: #5a5a5a;
+    padding-bottom: 50px;
+}
+
+.portfolio{
+    background-color: #F6F6F6;
+    display: block;
+}
+
+.portfolio-main{
+    padding-top: 65px;
+}
+
+.portfolio-subtitle{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #000;
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+
+.contacs-btn{
+    padding: 10px 30px;
+    background-color: #000;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
     text-decoration: none;
     
-    padding: 6px 20px;
+    color: #fff;
     
-    border-style: solid;
-    border-color: #FCF43E;
-    border-radius: 10px;
-    border-width: 2px;
 }
 
-.button_intro_block{
-    margin-top: 30px;
+.contacs-btn-block{
+    margin-bottom: 80px;
 }
 
-
-/*         Товары         */
-
-.products{
-    background: url(../img/Background_2.png) center;
-    background-repeat: repeat-x;
-    background-size: cover;
-}
-
-.products_item{
-    width: 240px;
-    height: 330px;
-    border-radius: 20px;
-
-    background: #FFDF35;
-}
-
-.section_title{
-    padding-top: 30px;
-    padding-bottom: 10px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 36px;
-    line-height: 33px;
+.footer{
     text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: uppercase;
-
-    color: #FFDF35;
 }
 
-.section_title--pricing{
-    font-size: 26px;
-    line-height: 32px;
-    padding-top: 0px;
-    padding-bottom: 20px;
-}
-
-.products_items{
-    padding: 0 15px;
-    padding-bottom: 20px;
-    max-width: 830px;
+.social-images{
     width: 100%;
+    max-width: 350px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.products_item_title{
-    padding: 15px 5px;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 33px;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: uppercase;
-    padding-bottom: 10px;
-
-    color: #000;
-}
-
-.products_item_subtitle{
-    padding: 0px 10px 5px;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 18px;
-    text-align: center;
-    letter-spacing: 0.00em;
-    text-transform: uppercase;
-
-    color: #000;
-}
-
-.products_item_img{
-    margin: 0 auto;
-    display: block;
-    object-fit: cover;
-    padding-top: 10px;
-    max-width: 143px;
-    max-height: 108px;
-    width: 100%;
-    height: 100%;
-}
-
-.products_item_price{
-    padding: 15px 5px;
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 33px;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: uppercase;
-    padding-bottom: 10px;
-
-    color: #000;
-}
-
-.button_price_block{
-    padding-top: 30px;
     padding-bottom: 50px;
+}
+
+.social-a{
+    cursor: pointer;
+}
+
+.footer-text{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
     text-align: center;
-}
+    padding-bottom: 90px;
 
-/*       Линии         */
-
-.line_between_block{
-    position: absolute;
-    opacity: .7;
-    z-index: 20;
-    width: 100%;
-    height: 10px;
-    background-color: #FCF43E;
-}
-
-/*        Форма       */
-
-.box{
-  padding: 40px;
-  background: black;
-  text-align: center;
-}
-.box h1{
-  color: #fff;
-}
-.box input[type = "name"]{
-  border:0;
-  background: none;
-  display: block;
-  margin: 20px auto;
-  text-align: center;
-  border: 2px solid #ffce00;
-  padding: 14px 10px;
-  width: 160px;
-  outline: none;
-  color: white;
-  border-radius: 24px;
-  transition: 0.25s;
-}
-.box input[type = "product"]{
-  border:0;
-  background: none;
-  display: block;
-  margin: 20px auto;
-  text-align: center;
-  border: 2px solid #ffce00;
-  padding: 14px 10px;
-  width: 180px;
-  outline: none;
-  color: white;
-  border-radius: 24px;
-  transition: 0.25s;
-}
-.box input[type = "e-mail"]{
-  border:0;
-  background: none;
-  display: block;
-  margin: 20px auto;
-  text-align: center;
-  border: 2px solid #ffce00;
-  padding: 14px 10px;
-  width: 200px;
-  outline: none;
-  color: white;
-  border-radius: 24px;
-  transition: 0.25s;
-}
-.box input[type = "name"]:focus{
-  width: 180px;
-  border-color: #ff4e00;
-}
-.box input[type = "product"]:focus{
-  width: 200px;
-  border-color: #ff4e00;
-}
-.box input[type = "e-mail"]:focus{
-  width: 220px;
-  border-color: #ff4e00;
-}
-.box input[type = "submit"]{
-  border:0;
-  background: none;
-  display: block;
-  margin: 20px auto;
-  text-align: center;
-  border: 2px solid #ffce00;
-  padding: 14px 40px;
-  outline: none;
-  color: white;
-  border-radius: 24px;
-  transition: 0.25s;
-  cursor: pointer;
-}
-.box input[type = "submit"]:hover{
-  background: #ffce00;
+    color: #828282;
 }
 
 
-
-
-
-/*        Для планшета         */
-
-@media (max-width: 800px){
-    .intro_titles{
-        margin: 0 auto;
-        margin-left: 3%;
+@media(min-width: 0px) and (max-width: 800px)
+{
+    body{
+        position: absolute;
     }
-    .intro_img {
-        height: 50%;
-        width: 50%;
-        margin-top: 7%;
-    }
-    .intro_img img{
-        margin-top: 0px;
+   
+}
+
+@media(min-width: 0px) and (max-width: 400px)
+{
+    .nav-link{
+        font-size: 14px;
     }
     
-    .intro_block {
-    }
-    .intro_titles {
-	    padding-left: 0;
-        padding-top: 1%;
-    }
-}
-
-/*          Телефоны        */
-
-@media (max-width: 767px){
-    .intro_titles{
+    .header-inner{
+        padding: 15px 5px;
         margin: 0 auto;
+        display: block;
+        border-bottom-width: 2px;
+    }
+    .intro-title{
         text-align: center;
+        line-height: 80%;
+        font-size: 58px;
+        padding-top: 5px;
     }
-    .nav{
-        display: block;
+    .intro{
+        padding-top: 15px;
     }
-    .nav li{
-        list-style: none;
-        padding-top: 10px;
-    }
-
-    .nav_link{
-        margin-left: 0px;
-    }
-    .header_inner{
-        height: 60px;
-        padding-bottom: 0;
-    }
-    .header_title{
-        font-size: 22px;
-    }
-    .header_img{
-        flex: 0 0 50px;
-        position: relative;
-        z-index: 4;
-    }
-    .header_burger{
-        display: block;
-        position: relative;
-        width: 40px;
-        height: 25px;
-        height: 25px;
-        z-index: 3;
-    }
-    
-    .header_burger:after,
-    .header_burger:before{
-        content: '';
-        background-color: #000;
-        position: absolute;
-        width: 100%;
-        height: 3px;
-        left: 0;
-        transition: all 0.3s ease 0s;
-    }
-    
-    .header_burger span{
-        position: absolute;
-        background-color: #000;
-        left: 0;
-        width: 100%;
-        height: 3px;
-        top: 11px;
-        transition: all 0.3s ease 0s;
-    }
-    
-    .header_burger:before{
-        top: 0;
-    }
-    
-    .header_burger:after{
-        bottom: 0;
-    }
-    
-    .header_burger.active:before{
-        transform: rotate(45deg);
-        top: 11px;
-    }
-    
-    .header_burger.active:after{
-        transform: rotate(-45deg);
-        bottom: 11px;
-    }
-    
-    .header_burger.active span{
-        transform: scale(0);
-    }
-    
-    .nav{
-        position: fixed;
-        left: 0;
-        top: -100%;
-        width: 100%;
-        height: 50%;
-        background-color: #ffd035;
-        padding-top: 80px;
-        transition: all 0.6s ease 0s;
-    }
-    
-    .nav.active {
-        top: 0;
-    }
-
-    
-    .nav_li{
+    .intro-titles{
         display: block;
         padding: 0;
     }
-    
-    .button_product_block{
-        display: block;
-        position: relative;
-        z-index: 3;
+    .intro-subtitle{
+        text-align: center;
+        margin-bottom: 10px;
+        font-weight: 400;
+        padding-left: 0px;
+        font-size: 18px;
+        line-height: 22px;
     }
-    .intro{
-    }
-    .intro_img{
-        display: none;
-    }
-    .products_items{
-        display: block;
-    }
-    .products_item{
-        display: block;
-        margin: 0;
+    .intro-img{   
+        background: url(../img/photo2.png) center top no-repeat;
+        max-width: 400px;
+        width: 100%;
         margin: 0 auto;
-        margin-top: 20px;
+        padding-top: 10px;
     }
     
+    .section-title{
+        padding-top: 40px; 
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 42px;
+        text-align: center;
+    }
+    
+    .aboutme{
+        padding: 0 14px;
+    }
+    
+    .aboutme-text1{
+        padding-bottom: 0px;
+        padding-top: 30px;
+    }
+    
+    .aboutme-text2{
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+    
+    .aboutme-text3{
+        padding-top: 25px;
+    }
+    
+    .text-p{
+        padding: 20px 0;
+    }
+    
+    .skills-programs{
+        display: block;
+    }
+    
+    .skills-name{
+        padding-top: 20px;
+        padding-bottom: 40px;
+        font-size: 20px;
+    }
+    
+    .prog-img{
+        display: block;
+        margin: 0 auto;
+        width: 30%;
+    }
+    
+    .portfolio-img{
+        max-width: 400px;
+        width: 100%;
+        padding: 0 15px;
+    }
+    .portfolio-main:first-child{
+        padding-top: 30px;
+    }
+    
+    .portfolio-main{
+        padding-top: 0px;
+    }
+    .portfolio-subtitle{
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+    .social-images{
+        padding: 0 30px;
+
+        max-width: 350px;
+        padding-bottom: 30px;
+    }
+    .footer-text{
+        font-size: 16px;
+        padding-bottom: 40px;
+    }
 }
-
-@media (max-width: 400px){
-    .intro_title{
-        font-size: 38px;
-        line-height: 110%;
-        padding-bottom: 20px;
-    }
-    .intro_subtitle{
-        font-size: 22px;
-        padding: 0px 10px;
-    }
-    .intro_block {
-	    display: flex;
-        align-items: center;
-    }
-}
-
-
-
-
-
