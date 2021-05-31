@@ -269,13 +269,6 @@ body{
     transform: scale(1.05);
 }
 
-.section-title, .aboutme-text1, .aboutme-text2, .aboutme-text{
-    transition: 1s;
-}
-.section-title:hover, .aboutme-text1:hover, .aboutme-text:hover, .aboutme-text2:hover{
-    transform: scale(1.05);
-}
-
 .portfolio-img{
     transition: 1s;
 }
